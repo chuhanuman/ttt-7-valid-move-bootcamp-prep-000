@@ -1,6 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(game, pos)
-  if (pos >= 0) && (pos < 8) && (position_taken?(game, pos))
+  if (pos >= 0) && (pos < 8) && !(position_taken?(game, pos))
     return TRUE
   else 
     return FALSE
